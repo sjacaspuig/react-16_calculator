@@ -1,1 +1,1 @@
-A simple project in React JS
+A simple calculator in React JS
