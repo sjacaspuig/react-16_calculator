@@ -1,0 +1,9 @@
+.key-button {
+  width: 100px;
+  font-size: 20px;
+  margin: 5px;
+}
+
+.key-button:active, .key-button:hover {
+  background-color: red;
+}

@@ -1,0 +1,9 @@
+.screen {
+  border: 2px solid grey;
+  background-color: black;
+  margin: 5px;
+  width: 296px;
+  color: white;
+  padding: 10px;
+  font-size: 40px;
+}

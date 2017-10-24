@@ -1,7 +1,8 @@
 import React from 'react';
+import './Screen.css'
 
-const Screen = () => (
-  <div>1234567890</div>
+const Screen = (props) => (
+  <div className="screen">{props.value}</div>
 )
 
 export default Screen;
