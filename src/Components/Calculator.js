@@ -18,6 +18,9 @@ export default class Calculator extends Component {
     let finalValue;
     if(this.state.value == '0' || (this.state.value == '0' && keyValue == '0')) {
       finalValue = keyValue;
+    } else if (keyValue == '=') {
+      const result = eval(this.state.value);
+      finalValue = result;
     } else if (keyValue == 'Supr') {
       finalValue = '0'
     } else {
@@ -55,7 +58,7 @@ export default class Calculator extends Component {
           <div className="key-row">
             <Keys value='Supr' onPress={ v =>  this.onKeyPress(v)}/>
             <Keys value='=' onPress={ v =>  this.onKeyPress(v)}/>
-            <Keys value='*' onPress={ v =>  this.onKeyPress(v)}/>
+            <Keys value='' onPress={ v =>  this.onKeyPress(v)}/>
           </div>
         </div>
       </div>
